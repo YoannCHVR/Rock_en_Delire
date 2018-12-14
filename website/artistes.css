@@ -1,0 +1,212 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: lightgrey;
+    font-size: 18px;
+    margin: 0;
+}
+
+div.conteneur {
+    display: flex;
+    margin-bottom: none;
+    background-color: black;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+    font-variant: small-caps;
+}
+
+img.logo {
+    width: 8%;
+    height: 6%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0.5%;
+}
+
+div.date {
+    padding-top: 1%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-right: 2px solid white;
+}
+
+div.menu {
+    padding-top: 3%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: background-color, 0.5s, ease-in;
+}
+
+div.menu:hover {
+    background-color: gray;
+}
+
+div.menu {
+    display: inline-block;
+    position: relative;
+}
+
+div.menu:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+div.menu:hover:after {
+    width: 100%;
+    background: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+}
+
+td {
+    border: 2px solid white;
+    font-family: 'Josefin Sans', sans-serif;
+    size: 24px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 150px;
+    transition: background-color, 0.5s, ease-in;
+    transition: border-bottom, 0.5s, ease-in;
+}
+
+td:hover {
+    background-color: gray;
+    border-bottom: 4px solid white;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+div.copyright {
+    width: 20%;
+    font-family: 'Josefin Sans', sans-serif;
+    size: 24px;
+}
+
+div.reseaux_s a {
+    margin-right: 1px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+.ligne {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ligne_verticale {
+    border-left: 1px solid;
+    height: 200px;
+}
+
+.ligne_horizontale {
+    border-top: 1px solid;
+    width: 100px;
+}
+
+.article_ligne_horizontale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+}
+
+.grosblock {
+    width: 50%;
+}
+
+h3 {
+    border: 1px 1px 1px 1px;
+    border-style: solid;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Special Elite', cursive;
+}
+
+article {
+    margin: 10px;
+    padding: 5px;
+}
+
+.gauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.divimages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%
+}
+
+.images {
+    width: 100%;
+    display: block;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size 200%;
+    color: black;
+    text-align: center;
+}

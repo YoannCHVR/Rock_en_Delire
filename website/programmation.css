@@ -1,0 +1,208 @@
+body {
+    background-image: url(../charte_graphique/test_background_rock.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 18px;
+    margin: 0;
+}
+
+div.conteneur {
+    display: flex;
+    margin-bottom: none;
+    background-color: black;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+    font-variant: small-caps;
+}
+
+img.logo {
+    width: 8%;
+    height: 6%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 0.5%;
+}
+
+div.date {
+    padding-top: 1%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-right: 2px solid white;
+}
+
+div.menu {
+    padding-top: 3%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: background-color, 0.5s, ease-in;
+}
+
+div.menu:hover {
+    background-color: gray;
+}
+
+div.menu {
+    display: inline-block;
+    position: relative;
+}
+
+div.menu:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+div.menu:hover:after {
+    width: 100%;
+    background: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+}
+
+td {
+    border: 2px solid white;
+    font-family: 'Josefin Sans', sans-serif;
+    size: 24px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 150px;
+    transition: background-color, 0.5s, ease-in;
+    transition: border-bottom, 0.5s, ease-in;
+}
+
+td:hover {
+    background-color: gray;
+    border-bottom: 4px solid white;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+div.copyright {
+    width: 20%;
+    font-family: 'Josefin Sans', sans-serif;
+    size: 24px;
+}
+
+div.reseaux_s a {
+    margin-right: 1px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/*---------------------------------PROGRAMMATION---------------------------------*/
+
+section.content {
+    padding: 50px 0;
+}
+
+section.content article.image {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+section.content article.image div {
+    padding: 50px;
+    background: white;
+}
+
+section.content article.the_week {
+    padding-top: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+section.content article.the_week div.content {
+    background: white;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.content article.the_week div h3 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+}
+
+section.content article.the_week div div.separator {
+    padding: 20px 20%; 
+}
+
+section.content article.the_week div div.separator div {
+    min-height: 4px;
+    background: black;
+    margin: auto; 
+}
+
+section.content article.the_week div ul {
+    margin: 0;
+    padding: 0;
+}
+
+section.content article.the_week div ul li {
+    list-style: none;
+}
+
+section.content article.the_week div ul p {
+    margin: 0;
+    width: 50%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+section.content article.the_week div ul p.date {
+    font-weight: bold;
+}
+
+section.content article.the_week div ul p.artiste {
+    float: right;
+    text-transform: capitalize;
+}
